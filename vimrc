@@ -43,6 +43,21 @@ endif
 
 " keyboard shortcuts
 let mapleader = ','
+
+map ; :
+
+nmap <leader>w :w!<cr>
+nmap <leader>q :qa<cr>
+
+nmap <leader>l <c-w>v<c-w>l
+nmap <leader>- <c-w>s<c-w>j
+
+nmap <leader>cw :close<cr>
+
+" grep
+map <leader>n :cn<cr>
+map <leader>p :cp<cr>
+
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
