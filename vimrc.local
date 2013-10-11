@@ -7,6 +7,7 @@ inoremap jj <ESC>
 if (&t_Co == 256 || has('gui_running'))
   if ($TERM_PROGRAM == 'iTerm.app')
     colorscheme solarized
+    set guifont=Envy\ Code\ R:h13
   else
     colorscheme desert
   endif
