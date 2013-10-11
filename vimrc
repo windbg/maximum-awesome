@@ -1,7 +1,7 @@
 " set up pathogen, https://github.com/tpope/vim-pathogen
 filetype on " without this vim emits a zero exit status, later, because of :ft off
 filetype off
-call pathogen#infect()
+execute pathogen#infect()
 filetype plugin indent on
 
 " don't bother with vi compatibility
@@ -17,7 +17,7 @@ set backupcopy=yes                                           " see :help crontab
 set clipboard=unnamed                                        " yank and paste with the system clipboard
 set directory-=.                                             " don't store swapfiles in the current directory
 set encoding=utf-8
-set expandtab                                                " expand tabs to spaces
+"set expandtab                                                " expand tabs to spaces
 set ignorecase                                               " case-insensitive search
 set incsearch                                                " search as you type
 set laststatus=2                                             " always show statusline
@@ -26,11 +26,12 @@ set listchars=tab:▸\ ,trail:▫
 set number                                                   " show line numbers
 set ruler                                                    " show where you are
 set scrolloff=3                                              " show context above/below cursorline
-set shiftwidth=4                                            " normal mode indentation commands use 2 spaces
+set shiftwidth=4                                             " normal mode indentation commands use 2 spaces
 set showcmd
 set smartcase                                                " case-sensitive search if any caps
-set softtabstop=4                                            " insert mode tab and backspace use 2 spaces
+set softtabstop=4                                           " insert mode tab and backspace use 2 spaces
 set tabstop=4                                               " actual tabs occupy 8 characters
+set expandtab
 set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
 set wildmenu                                                 " show a navigable menu for tab completion
 set wildmode=longest,list,full
@@ -63,7 +64,7 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 " map <leader>l :Align
-nmap <leader>a :Ack 
+nmap <leader>a :Ack
 nmap <leader>b :CtrlPBuffer<CR>
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
