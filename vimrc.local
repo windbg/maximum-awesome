@@ -20,3 +20,6 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=lightgray
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=white
+
+let g:gist_clip_command = 'xclip -selection clipboard'
+let g:gist_post_private = 1
