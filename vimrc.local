@@ -7,10 +7,12 @@ inoremap jj <ESC>
 if (&t_Co == 256 || has('gui_running'))
   set guifont=Source\ Code\ Pro:h13
   if ($TERM_PROGRAM == 'iTerm.app')
-    colorscheme solarized
+    " colorscheme solarized
     set background=dark
   else
-    colorscheme bclear
+    " colorscheme bclear
+    " colorscheme solarized
+    colorscheme molokai
     set background=dark
   endif
 endif
@@ -23,3 +25,32 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=white
 
 let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_post_private = 1
+
+" go tagbar
+let g:tagbar_type_go = {
+    \ 'ctagstype'   : 'go',
+    \ 'kinds'       : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin' : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
