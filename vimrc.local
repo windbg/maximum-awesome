@@ -6,7 +6,7 @@ inoremap jj <ESC>
 " gui settings
 if (&t_Co == 256 || has('gui_running'))
   "set guifont=Source\ Code\ Pro:h13
-  set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 11.5
+  set guifont=Sauce\ Code\ Powerline\ Light:h13
   set guioptions=none
   if ($TERM_PROGRAM == 'iTerm.app')
     " colorscheme solarized
