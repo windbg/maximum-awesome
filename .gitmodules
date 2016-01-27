@@ -136,3 +136,6 @@
 [submodule "vim/bundle/vim-luna"]
 	path = vim/bundle/vim-luna
 	url = https://github.com/Pychimp/vim-luna.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
