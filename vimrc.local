@@ -13,11 +13,12 @@ if (&t_Co == 256 || has('gui_running'))
     set background=dark
   else
     " colorscheme bclear
-    " colorscheme solarized
+    colorscheme solarized
     " colorscheme molokai
     " set background=dark
-    colorscheme luna
-    set background=dark
+    " colorscheme luna
+    " set background=dark
+    set background=light
   endif
 endif
 
