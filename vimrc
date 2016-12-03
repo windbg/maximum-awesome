@@ -38,7 +38,7 @@ set wildmode=longest,list,full
 
 " set term=screen
 
-colorscheme luna
+" colorscheme luna
 
 " Enable basic mouse behavior such as resizing buffers.
 set mouse=a
