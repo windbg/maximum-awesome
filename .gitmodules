@@ -67,9 +67,6 @@
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
 	url = git://github.com/kchmck/vim-coffee-script.git
-[submodule "vim/bundle/jshint"]
-	path = vim/bundle/jshint
-	url = git://github.com/rmanalan/jshint.vim.git
 [submodule "vim/bundle/protobuf"]
 	path = vim/bundle/protobuf
 	url = git://github.com/uarun/vim-protobuf.git
@@ -136,3 +133,12 @@
 [submodule "vim/bundle/vim-luna"]
 	path = vim/bundle/vim-luna
 	url = https://github.com/Pychimp/vim-luna.git
+[submodule "vim/bundle/vim-jsx"]
+	path = vim/bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
+[submodule "vim/bundle/vim-go"]
+	path = vim/bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule "vim/bundle/neocomplete"]
+	path = vim/bundle/neocomplete
+	url = https://github.com/Shougo/neocomplete.vim.git

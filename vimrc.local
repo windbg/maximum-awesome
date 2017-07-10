@@ -6,18 +6,19 @@ inoremap jj <ESC>
 " gui settings
 if (&t_Co == 256 || has('gui_running'))
   "set guifont=Source\ Code\ Pro:h13
-  set guifont=Sauce\ Code\ Powerline\ Light:h13
+  set guifont=Sauce\ Code\ Powerline:h13
   set guioptions=none
   if ($TERM_PROGRAM == 'iTerm.app')
-    " colorscheme solarized
-    set background=dark
+    colorscheme solarized
+    set background=light
   else
     " colorscheme bclear
     " colorscheme solarized
     " colorscheme molokai
     " set background=dark
-    colorscheme luna
-    set background=dark
+    " colorscheme luna
+    colorscheme solarized
+    set background=light
   endif
 endif
 
@@ -61,9 +62,9 @@ let g:tagbar_type_go = {
 \ }
 
 " go lint
-set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
-autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
-autocmd BufRead,BufNewFile *.go set filetype=go
+"set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
+"autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
+"autocmd BufRead,BufNewFile *.go set filetype=go
 
 " airline
 let g:airline_powerline_fonts = 1
@@ -71,3 +72,18 @@ let g:airline_powerline_fonts = 1
 " powerline
 let g:Powerline_symbols = 'fancy'
 let Powerline_symbols='compatible'
+
+" jsx
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
+" eslint
+let g:syntastic_javascript_checkers = ['eslint']
+
+" neocomplete
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#sources#dictionary#dictionaries = {
+            \ 'default':'',
+            \}
