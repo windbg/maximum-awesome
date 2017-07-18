@@ -163,3 +163,6 @@
 [submodule "vim-signify"]
 	path = vim-signify
 	url = https://github.com/mhinz/vim-signify.git
+[submodule "vim/bundle/nerdcommenter"]
+	path = vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
