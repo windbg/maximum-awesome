@@ -74,6 +74,21 @@ let g:airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
 let Powerline_symbols='compatible'
 
+" jsx
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
+" eslint
+let g:syntastic_javascript_checkers = ['eslint']
+
+" neocomplete
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#sources#dictionary#dictionaries = {
+            \ 'default':'',
+            \}
+
 " conoline.vim
 let g:conoline_auto_enable = 1
 
