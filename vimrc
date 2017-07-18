@@ -35,7 +35,7 @@ set expandtab
 set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
 set wildmenu                                                 " show a navigable menu for tab completion
 set wildmode=longest,list,full
-
+set cc=80
 " set term=screen
 
 " colorscheme luna
