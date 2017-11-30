@@ -6,16 +6,15 @@ inoremap jj <ESC>
 " gui settings
 if (&t_Co == 256 || has('gui_running'))
   "set guifont=Source\ Code\ Pro:h13
-  set guifont=Sauce\ Code\ Powerline:h13
+  "set guifont=Sauce\ Code\ Powerline:h13
+  set guifont=Fira\ Mono:h13
   set guioptions=none
   if ($TERM_PROGRAM == 'iTerm.app')
     colorscheme solarized
     set background=light
   else
     " colorscheme bclear
-    colorscheme solarized
     " colorscheme molokai
-    " set background=dark
     " colorscheme luna
     colorscheme solarized
     " set background=dark
@@ -96,5 +95,10 @@ let g:conoline_auto_enable = 1
 let g:go_highlight_types = 1
 let g:go_fmt_command = "goimports"
 
+autocmd FileType go nmap <leader>b <Plug>(go-build)
+autocmd FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <Leader>s <Plug>(go-implements)
 au FileType go nmap <Leader>i <Plug>(go-info)
+
+" vim-jsx
+let g:jsx_ext_required = 0
