@@ -169,3 +169,6 @@
 [submodule "vim/bundle/ultisnips"]
 	path = vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
+[submodule "oh-my-fish"]
+	path = oh-my-fish
+	url = https://github.com/oh-my-fish/oh-my-fish.git
