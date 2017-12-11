@@ -37,6 +37,7 @@ set wildmenu                                                 " show a navigable 
 set wildmode=longest,list,full
 set cc=80
 " set term=screen
+set nocursorline " don't highlight current line
 
 " colorscheme luna
 

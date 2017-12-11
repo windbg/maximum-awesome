@@ -9,24 +9,26 @@ if (&t_Co == 256 || has('gui_running'))
   "set guifont=Sauce\ Code\ Powerline:h13
   set guifont=Fira\ Mono:h13
   set guioptions=none
-  if ($TERM_PROGRAM == 'iTerm.app')
-    colorscheme solarized
-    set background=light
-  else
-    " colorscheme bclear
-    " colorscheme molokai
-    " colorscheme luna
-    colorscheme solarized
-    " set background=dark
-    set background=light
-  endif
+  colorscheme molokai
+  set background=dark
+  "if ($TERM_PROGRAM == 'iTerm.app')
+  "  colorscheme solarized
+  "  set background=light
+  "else
+  "  " colorscheme bclear
+  "  " colorscheme molokai
+  "  " colorscheme luna
+  "  colorscheme solarized
+  "  " set background=dark
+  "  set background=light
+  "endif
 endif
 
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=lightgray
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=white
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=white
 
 " gist
 let g:gist_clip_command = 'xclip -selection clipboard'
@@ -93,8 +95,13 @@ let g:conoline_auto_enable = 1
 
 " vim-go
 let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
 let g:go_fmt_command = "goimports"
 
+let g:rehash256 = 1
+let g:molokai_original = 1
 autocmd FileType go nmap <leader>b <Plug>(go-build)
 autocmd FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <Leader>s <Plug>(go-implements)
@@ -102,3 +109,8 @@ au FileType go nmap <Leader>i <Plug>(go-info)
 
 " vim-jsx
 let g:jsx_ext_required = 0
+
+" Ultisnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltisnipsJumpBackwardTrigger="<c-z>"
