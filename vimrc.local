@@ -5,30 +5,16 @@ inoremap jj <ESC>
 
 " gui settings
 if (&t_Co == 256 || has('gui_running'))
-  "set guifont=Source\ Code\ Pro:h13
-  "set guifont=Sauce\ Code\ Powerline:h13
-  set guifont=Fira\ Mono:h13
+  set guifont=Anonymice\ Powerline:h17
   set guioptions=none
   colorscheme molokai
   set background=dark
-  "if ($TERM_PROGRAM == 'iTerm.app')
-  "  colorscheme solarized
-  "  set background=light
-  "else
-  "  " colorscheme bclear
-  "  " colorscheme molokai
-  "  " colorscheme luna
-  "  colorscheme solarized
-  "  " set background=dark
-  "  set background=light
-  "endif
 endif
 
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=lightgray
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=white
 
 " gist
 let g:gist_clip_command = 'xclip -selection clipboard'
