@@ -7,7 +7,8 @@ inoremap jj <ESC>
 if (&t_Co == 256 || has('gui_running'))
   "set guifont=Source\ Code\ Pro:h13
   "set guifont=Sauce\ Code\ Powerline:h13
-  set guifont=Fira\ Mono:h13
+  "set guifont=Fira\ Mono:h13
+  set guifont=Anonymice\ Powerline:h18
   set guioptions=none
   colorscheme molokai
   set background=dark
